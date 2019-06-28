@@ -23,7 +23,6 @@ export class EmailForm extends Component {
         id="signup-form"
         onSubmit={this.onSubmit}
         method="post"
-        action="#"
         name="batch-web-emails"
         data-netlify="true">
         <input
