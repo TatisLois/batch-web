@@ -22,10 +22,10 @@ export default class SlideShow extends PureComponent {
       }
 
       // Hide last image after a short delay.
-      setTimeout(() => {
-        lastPos = pos;
-        this.setState({ lastPos });
-      }, settings.delay / 2);
+      // setTimeout(() => {
+      //   lastPos = pos;
+      //   this.setState({ lastPos });
+      // }, settings.delay / 2);
 
       this.setState({ lastPos, pos });
     }, settings.delay);

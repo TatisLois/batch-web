@@ -17,7 +17,7 @@
 			'color #{_duration(transition)} ease-in-out',
 			'opacity #{_duration(transition)} ease-in-out'
 		));
-		background-color: _palette(accent, bg);
+		background-color: #1DB8BB;
 		border-radius: _size(border-radius);
 		border: 0;
 		color: _palette(accent, fg-bold) !important;

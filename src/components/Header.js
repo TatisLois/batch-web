@@ -1,12 +1,10 @@
 import React from 'react';
 
-import config from '../../config';
-
-export default function Footer() {
+export default function Header(props) {
+  const { children } = props;
   return (
     <header id="header">
-      <h1>{config.heading}</h1>
-      <p>{config.subHeading}</p>
+      { children }
     </header>
   );
 }

@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
 import '../assets/sass/main.scss';
+const logoURL = require('../assets/images/batch.png');
 
 class Layout extends Component {
   constructor() {
@@ -45,6 +46,17 @@ class Layout extends Component {
               <html lang="en" />
             </Helmet>
             <div className={isPreloaded ? 'main-body is-preload' : 'main-body'}>
+            <div
+              style={{
+                backgroundPosition: 'center',
+                backgroundImage: `url("${logoURL}")`,
+                height: '150px',
+                width: '150px',
+                backgroundSize: 'cover',
+                position: 'fixed',
+                top: 0
+              }}
+            ></div>
               {children}
             </div>
           </>

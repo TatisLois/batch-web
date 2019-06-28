@@ -19,14 +19,20 @@ export class EmailForm extends Component {
   render() {
     const { message } = this.state;
     return (
-      <form id="signup-form" onSubmit={this.onSubmit} method="post" action="#">
+      <form
+        id="signup-form"
+        onSubmit={this.onSubmit}
+        method="post"
+        action="#"
+        name="batch-web-emails"
+        data-netlify="true">
         <input
           type="email"
           name="email"
           id="email"
           placeholder="Email Address"
         />
-        <input type="submit" value="Sign Up" />
+        <input type="submit" value="Get The App First" />
         <span className={`${message ? 'visible success' : ''} message`}>
           {message}
         </span>
