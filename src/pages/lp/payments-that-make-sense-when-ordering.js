@@ -17,15 +17,15 @@ var settings = {
 const IndexPage = () => (
   <Layout>
     <Header>
-      <h1> Multiple Payments, One Order!</h1>
       <Types strings={
         [
-          'An easier way to order with family',
-          'An easier way to order with friends',
-          'An easier way to order with co-workers',
-          'An easier way to order'
+          'Stop paying for that... friend',
+          'Stop paying for that... co-workers',
+          'Stop paying for your date',
+          'Stop paying for your date... <br/> wait maybe still treat them &#128521;',
         ]
       }/>
+      <p> Ordering that makes sense </p>
     </Header>
     <EmailForm />
     {/* <Footer /> */}

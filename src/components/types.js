@@ -22,9 +22,10 @@ export default class Types extends React.Component {
       this.typed.destroy();
     }
     render() {
+      const { element } = this.props;
+      const markup = element ? React.createElement(element, {className: this.props.className, ref: (el) => { this.el = el; }}, this.props.children) : <h1 ref={(el) => { this.el = el; }}></h1>
       return (
-        <h1 ref={(el) => { this.el = el; }}>
-        </h1>
+        markup
       );
     }
   }
