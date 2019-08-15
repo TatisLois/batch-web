@@ -1,47 +1,46 @@
-@import 'libs/vars';
-@import 'libs/functions';
-@import 'libs/mixins';
-@import 'libs/vendor';
-@import 'libs/breakpoints';
 @import 'font-awesome.min.css';
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import './components/breakpoints';
+@import './components/hero';
+@import './components/upsell-blocks';
+@import './components/form';
+@import './components/section';
 
-/*
-	Eventually by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+:root {
+	font-size: 16px;
+	line-height: 27px;
+	font-family: 'Roboto', sans-serif;
+}
 
-// Breakpoints.
+h1,h2,h3,h4,h5,p {
+	color: #3F444C;
+}
 
-	@include breakpoints((
-		xlarge:   ( 1281px,  1680px ),
-		large:    ( 981px,   1280px ),
-		medium:   ( 737px,   980px  ),
-		small:    ( 481px,   736px  ),
-		xsmall:   ( 361px,   480px  ),
-		xxsmall:  ( null,    360px  ),
-		short:    '(max-height: 640px)'
-	));
+body {
+	margin: 0 auto;
+	max-width: 1500px;
+}
 
-// Base.
+.main-body {
+	height: 100vh;
+}
 
-	@import 'base/reset';
-	@import 'base/page';
-	@import 'base/bg';
-	@import 'base/typography';
+.header-logo {
+	height:75px;
+	width: 150px;
 
-// Components.
+	@media only screen and (min-width: $breakpoint-large) {
+		height: 145px;
+		width: 300px;
+	}
+}
 
-	@import 'components/section';
-	@import 'components/icon';
-	@import 'components/list';
-	@import 'components/icons';
-	@import 'components/form';
-	@import 'components/button';
+.background-top-right {
+	position:relative;
+}
 
-// Layout.
-
-	@import 'layout/header';
-	@import 'layout/signup-form';
-	@import 'layout/footer';
+.hero-logo {
+	display: flex;
+	justify-content: center;
+	margin: 25px 0 0 0;
+}

@@ -1,35 +1,22 @@
 import React from 'react';
-import Types from '../components/types'
 import Layout from '../components/Layout';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
-import EmailForm from '../components/EmailForm';
-import SlideShow from '../components/SlideShow';
-
-var settings = {
-  images: [
-    { url: require('../assets/images/one.png'), position: 'center' },
-  ],
-  // Delay.
-  delay: 6000,
-};
+import UpsellBlocks from "../components/Upsell-Blocks";
+import Hero from '../components/Hero';
+import Section from "../components/Section";
+const curveLine = require('../assets/images/curve-line.png')
 
 const IndexPage = () => (
   <Layout>
-    <Header>
-      <Types strings={
-        [
-          'The Best Way To Order Delivery With Friends',
-          'The Best Way To Order Delivery With Family',
-          'The Best Way To Order Delivery With Co-workers',
-          'The Best Way To Order Delivery'
-        ]
-      }/>
-      <p>A food ordering platform focused on connecting and sharing.</p>
-    </Header>
-    <EmailForm />
-    {/* <Footer /> */}
-    <SlideShow settings={settings} />
+    <Hero />
+    <img src={curveLine} height='170' width='100%'/>
+    <div
+      style={{
+        background: 'linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(228,244,241,1) 90%)',
+        marginTop: '-10px'
+      }}>
+      <UpsellBlocks/>
+      <Section />
+    </div>
   </Layout>
 );
 

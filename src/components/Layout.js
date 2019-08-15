@@ -5,6 +5,7 @@ import { StaticQuery, graphql } from 'gatsby';
 
 import '../assets/sass/main.scss';
 const logoURL = require('../assets/images/batch.png');
+const topRightCornerURL = require('../assets/images/background-top-right.png')
 
 class Layout extends Component {
   constructor() {
@@ -46,17 +47,12 @@ class Layout extends Component {
               <html lang="en" />
             </Helmet>
             <div className={isPreloaded ? 'main-body is-preload' : 'main-body'}>
-            <div
-              style={{
-                backgroundPosition: 'center',
-                backgroundImage: `url("${logoURL}")`,
-                height: '150px',
-                width: '150px',
-                backgroundSize: 'cover',
-                position: 'fixed',
-                top: 0
-              }}
-            ></div>
+            {/* <div className='background-top-right'>
+              <img src={topRightCornerURL} alt="batch logo" height="50" width="150" />
+            </div> */}
+            <div className='hero-logo'>
+              <img className='header-logo' src={logoURL} alt="batch logo" />
+            </div>
               {children}
             </div>
           </>

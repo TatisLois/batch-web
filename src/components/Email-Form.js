@@ -38,6 +38,7 @@ export class EmailForm extends Component {
     const { message } = this.state;
     return (
       <form
+        className='form'
         id="signup-form"
         onSubmit={this.onSubmit} // edit for form works
         method="post"
@@ -51,7 +52,7 @@ export class EmailForm extends Component {
           placeholder="Email Address"
         />
         <br/>
-        <input type="submit" value="Get The App First" />
+        <input type="submit" value="Sign Up" />
         <span className={`${message ? 'visible success' : ''} message`}>
           {message}
         </span>
