@@ -1,5 +1,5 @@
 @import 'font-awesome.min.css';
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 @import './components/breakpoints';
 @import './components/hero';
 @import './components/upsell-blocks';
@@ -18,11 +18,12 @@ h1,h2,h3,h4,h5,p {
 
 body {
 	margin: 0 auto;
-	max-width: 1500px;
 }
 
 .main-body {
 	height: 100vh;
+	max-width: 1500px;
+	margin: auto;
 }
 
 .header-logo {
@@ -37,6 +38,14 @@ body {
 
 .background-top-right {
 	position:relative;
+}
+
+.background-top-right-inner {
+	position: absolute;
+	right: 0;
+	top: -25px;
+	height:300px;
+	width:500px;
 }
 
 .hero-logo {

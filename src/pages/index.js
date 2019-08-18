@@ -1,20 +1,20 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import UpsellBlocks from "../components/Upsell-Blocks";
-import Hero from '../components/Hero';
-import Section from "../components/Section";
-const curveLine = require('../assets/images/curve-line.png')
+import Blocks from "../components/block";
+import Hero from '../components/hero';
+import Section from "../components/section";
+import WaveSVG from '../components/wave';
 
 const IndexPage = () => (
   <Layout>
     <Hero />
-    <img src={curveLine} height='170' width='100%'/>
+    <WaveSVG />
     <div
       style={{
         background: 'linear-gradient(0deg, rgba(255,255,255,1) 10%, rgba(228,244,241,1) 90%)',
         marginTop: '-10px'
       }}>
-      <UpsellBlocks/>
+      <Blocks/>
       <Section />
     </div>
   </Layout>
