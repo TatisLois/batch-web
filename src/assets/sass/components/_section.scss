@@ -23,4 +23,28 @@
         font-size: .8rem;
     }
 
+
+    @media only screen and (min-width: $breakpoint-large) {
+      &-copy {
+        padding: 0 2rem;
+      }
+
+      &-main {
+        flex-direction: row;
+        width: 100%
+      }
+
+      &-reverse {
+        flex-direction: row-reverse;
+      }
+
+
+      &-img {
+        width: 50%;
+        height: 50%;
+        text-align: center;
+        margin: 1rem 0
+    }
+    }
+
 }

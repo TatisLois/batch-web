@@ -5,6 +5,10 @@
     color: #54C1B7;
 }
 
+.blockImage {
+  display: none;
+}
+
 .upsell {
     display: flex;
     flex-direction: column;
@@ -12,6 +16,8 @@
     align-items: center;
     padding: 0 2rem;
     text-align: center;
+    max-width: 800px;
+
 
     &-title {
         font-size: .9rem;
@@ -31,4 +37,16 @@
         color: #333;
 
     }
+
+    @media only screen and (min-width: $breakpoint-large) {
+      flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: $breakpoint-large) {
+  .blockImage {
+    width: 75%;
+    margin: auto;
+    display: block;
+  }
 }
