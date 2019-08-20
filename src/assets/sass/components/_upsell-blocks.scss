@@ -1,8 +1,5 @@
 .upsell-main-title {
-    margin: 0 0 2rem;
-    text-align: center;
-    font-size: 1rem;
-    color: #54C1B7;
+    display:none;
 }
 
 .blockImage {
@@ -10,40 +7,80 @@
 }
 
 .upsell {
-    display: flex;
+    display:none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0 2rem;
     text-align: center;
-    max-width: 800px;
-
 
     &-title {
-        font-size: .9rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
         color: #54C1B7;
     }
 
     &-section-body {
+        img {
+          width: 50px;
+          height: 50px;
+        }
+
         margin: 1rem 0;
     }
 
-    &-text {
-        font-size: .8rem;
+    &-text, &-anchor-text {
+        font-size: 12px;
+        line-height: 1rem;
     }
 
     &-anchor-text {
-        font-size: .8rem;
-        color: #333;
-
+      color: #333;
+      border: none;
+      background-color: transparent;
+      text-decoration: underline;
     }
 
     @media only screen and (min-width: $breakpoint-large) {
       flex-direction: row;
     }
+
+    @media only screen and (min-width: $breakpoint-xlarge) {
+      flex-direction: row;
+
+      &-title {
+        font-size: 30px;
+        line-height: 41px;
+      }
+
+      &-section-body {
+          img {
+            width: 100px;
+            height: 100px;
+          }
+      }
+
+      &-text, &-anchor-text {
+          font-size: 22px;
+          line-height: 24px;
+      }
+    }
 }
 
 @media only screen and (min-width: $breakpoint-large) {
+  .upsell-main-title {
+    display: block;
+    margin: 0 0 3rem 0;
+    text-align: center;
+    font-size: 38px;
+    line-height: 41px;
+    color: #54C1B7;
+  }
+
+  .upsell {
+    display: flex;
+  }
+
   .blockImage {
     width: 75%;
     margin: auto;

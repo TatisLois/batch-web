@@ -7,12 +7,9 @@ const logoURL = require('../../assets/images/batch.png');
 
 export default function Hero() {
   return (
-    <div
+    <div className='hero-blob'
       style={{
           backgroundImage: `url(${topRightCornerURL})`,
-          backgroundPosition: 'right top',
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: '150px 400px'
         }}>
       <div className='hero-logo'>
         <img className='header-logo' src={logoURL} alt="batch logo" />

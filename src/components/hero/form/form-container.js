@@ -36,8 +36,10 @@ export class EmailForm extends Component {
 
   render() {
     const { message } = this.state;
+    const { style } = this.props;
     return (
       <form
+        style={style}
         className='form'
         id="signup-form"
         onSubmit={this.onSubmit} // edit for form works

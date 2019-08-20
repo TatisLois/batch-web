@@ -1,5 +1,9 @@
 .section {
-    margin: 2rem 0 0;
+    display: flex;
+    flex-direction: column;
+    margin: -1rem 2rem;
+    align-items: center;
+    justify-content: center;
 
     &-img {
         height: 150px;
@@ -25,6 +29,17 @@
 
 
     @media only screen and (min-width: $breakpoint-large) {
+
+      &-title {
+        font-size: 38px;
+        line-height: 41px;
+      }
+
+      &-subtitle {
+          font-size: 22px;
+          line-height: 30px;
+      }
+
       &-copy {
         padding: 0 2rem;
       }

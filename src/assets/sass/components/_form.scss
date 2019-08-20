@@ -1,14 +1,17 @@
 .form {
 	display: flex;
-	justify-content: start;
+  justify-content: start;
+  width: 100%;
 
 	input[type=email] {
+    width: 100%;
+    max-width: 366px;
+    height: 40px;
 		border-radius: 10px;
 		border: .5px solid  #BFBDBF;
 		margin: 0 .5rem 0 0;
 		font-size: .8rem;
-		padding: 0 0 0 10px;
-		max-width: 366px;
+		padding: 10px;
 	 }
 
 	 button {
@@ -23,7 +26,7 @@
 	 @media only screen and (min-width: $breakpoint-large) {
 		input[type=email] {
 			line-height: 1rem;
-			padding: .5rem;
+			padding: .5rem 1rem;
 			border-radius: 20px;
 			min-width: 200px;
 		 }
