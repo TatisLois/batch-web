@@ -27,6 +27,8 @@
 	 }
 
 	 @media only screen and (min-width: $breakpoint-large) {
+    flex-direction: row;
+
 		input[type=email] {
 			line-height: 1rem;
 			padding: .5rem 1rem;
@@ -37,7 +39,9 @@
 		 button {
 			font-size: 1rem;
 			line-height: 1rem;
-			max-height: 57px;
+      max-height: 57px;
+      margin: 0;
+      width: 50%;
 		 }
 	 }
 }
