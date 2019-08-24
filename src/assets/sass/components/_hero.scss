@@ -5,28 +5,38 @@
 
 .hero {
 	display: flex;
-	flex-direction: column;
+	flex-direction: column-reverse;
 	align-items: start;
 	padding: 0 2rem 2rem;
 
 	&-left {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+    align-items: center;
+    text-align: center;
+  }
+
+	&-right {
+		margin: auto;
 	}
 
 	&-title {
-		font-size: 1rem;
-		line-height: 1.5rem;
+    margin: -10px 0 0 0;
+		font-size: 27px;
+		line-height: 35px;
 	}
 
 	&-subtitle {
-		font-size: .8rem;
-		line-height: 1rem;
-		font-weight: 200;
+		font-size: 18px;
+		line-height: 26px;
 	}
 
-	&-top-img, &-bottom-img {
+  &-top-img {
+    width: 250px;
+    height: 270px;
+  }
+
+  &-bottom-img {
     display: none;
     width: 100%
   }

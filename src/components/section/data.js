@@ -1,27 +1,31 @@
 const copy = [
     {
         id: 'one',
-        title: 'Lorem Ipsum Dolor Ad Enimsit Amet',
-        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        image: require('../../assets/images/hand-app.png')
+        title: 'Group ordering the right way',
+        body: 'Getting lunch with co-workers. Ordering food for game night. Getting take out for your family. You can now easily order food with anyone and everyone.',
+        image: require('../../assets/images/hand-app.png'),
+        'button': 'Get Started'
     },
     {
         id: 'two',
-        title: 'Lorem Ipsum Dolor Ad Enimsit Amet',
-        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        image: require('../../assets/images/location.png')
+        title: 'A new way to discover',
+        body: 'You have the option of paying for your friends, but now everyone can finally just pay for themselves -- problem solved.',
+        image: require('../../assets/images/location.png'),
+        'button': 'Lets Discover'
     },
     {
         id: 'three',
-        title: 'Lorem Ipsum Dolor Ad Enimsit Amet',
-        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        image: require('../../assets/images/groupMeal.png')
+        title: 'Lets do this together',
+        body: 'Picking a resturnant for the group is stressful. Why not ask them in the group chat what they are cravings',
+        image: require('../../assets/images/groupMeal.png'),
+        'button': 'Get Started'
     },
     {
         id: 'four',
-        title: 'Lorem Ipsum Dolor Ad Enimsit Amet',
-        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        image: require('../../assets/images/split-payment.png')
+        title: 'Solving the easy problem',
+        body: 'You have the option of paying for your friends, but now everyone can finally just pay for themselves -- problem solved',
+        image: require('../../assets/images/split-payment.png'),
+        'button': "I'm Ready"
     }
 ]
 

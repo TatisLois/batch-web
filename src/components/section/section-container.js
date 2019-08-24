@@ -1,5 +1,4 @@
 import React from 'react';
-import Form from '../hero/form'
 import copy from './data'
 
 function isEven(value) {
@@ -9,11 +8,17 @@ function isEven(value) {
 		return false;
 }
 
+function scrollToCTA () {
+  document.querySelector('.header-logo').scrollIntoView({
+    behavior: 'smooth'
+  });
+}
+
 export default function Section() {
   return (
     <div className='section'>
         {
-            copy.map(({ id, title, body, image}, index) => (
+            copy.map(({ id, title, body, image, button}, index) => (
                 <div
                   key={`${title}-${index}`}
                   data-section-id={id}
@@ -21,12 +26,17 @@ export default function Section() {
                     <div className='section-copy'>
                         <h1 className='section-title'>{title}</h1>
                         <p className='section-subtitle'>{body}</p>
+                        <button className='section-arrow'
+                          onClick={scrollToCTA}
+                        >
+                          {button}
+                          &#8594;
+                        </button>
                     </div>
                     <img className='section-img' src={image} />
                 </div>
             ))
         }
-        <Form style={{justifyContent: 'center', 'marginBottom': '6rem'}} />
     </div>
   );
 }

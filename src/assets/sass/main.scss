@@ -20,8 +20,12 @@ html {
   box-sizing: inherit;
 }
 
-h1,h2,h3,h4,h5,p {
+h1,h2,h3,h4,h5 {
 	color: #3F444C;
+}
+
+p {
+  color: #828282;
 }
 
 body {
@@ -54,4 +58,12 @@ body {
 	top: -25px;
 	height:300px;
 	width:500px;
+}
+
+.wave {
+  display: none;
+
+	@media only screen and (min-width: $breakpoint-large) {
+		display: block
+	}
 }

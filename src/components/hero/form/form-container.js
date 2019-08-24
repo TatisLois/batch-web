@@ -53,7 +53,6 @@ export class EmailForm extends Component {
           id="email"
           placeholder="Email Address"
         />
-        <br/>
         <button type="submit">Sign Up</button>
         <span className={`${message ? 'visible success' : ''} message`}>
           {message}

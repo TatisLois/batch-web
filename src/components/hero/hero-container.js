@@ -16,7 +16,7 @@ export default function Hero() {
       </div>
       <div className='hero'>
         <div className='hero-left'>
-          <h1 className='hero-title'>The Best Way to Order Delivery with Friends </h1>
+          <h1 className='hero-title'>The best way to order delivery with friends </h1>
           <p className='hero-subtitle'>Batch is a food delivery app focused on what really matters. People. Whether you are in charge of getting everyones' order at work or having a get together with friends and family, we're here to make ordering easier and more fun! </p>
           <Form />
           <img className='hero-bottom-img' src={heroSubURL} />
