@@ -11,7 +11,6 @@ const IndexPage = () => (
     <WaveSVG />
     <div
       className='section-background'>
-      <Blocks/>
       <Section />
     </div>
   </Layout>
