@@ -11,19 +11,33 @@
 
     display: flex;
     flex-direction: column;
-    margin: -1rem 2rem 3rem;
+    margin: -1rem 0rem 3rem;
     align-items: center;
     justify-content: center;
 
+
+    &-flex-end {
+      align-items: flex-end;
+    }
+
+    &-flex-start {
+      align-items: flex-start;
+    }
+
     &-img {
         height: 300px;
-        width: 300px;
+        width: 280px;
         text-align: center;
         margin: 1rem 0
     }
 
+    &-img-bottom {
+      height: 250px;
+  }
+
     &-copy {
-      text-align: center;
+      text-align: left;
+      padding: 0 2rem;
     }
 
 
@@ -39,8 +53,6 @@
     &-main {
         display:flex;
         flex-direction: column-reverse;
-        padding: 0 2rem;
-        align-items: center;
     }
 
     &-title {
@@ -56,6 +68,10 @@
 
     &-desktop {
       display: none;
+    }
+
+    &-mobile {
+
     }
 
 
@@ -85,6 +101,7 @@
       }
 
       &-main {
+        align-items: center;
         flex-direction: row;
         width: 100%
       }
@@ -99,6 +116,14 @@
         height: 50%;
         text-align: center;
         margin: 1rem 0
+    }
+
+    &-flex-end {
+      align-items: center;
+    }
+
+    &-flex-start {
+      align-items: center;
     }
     }
 

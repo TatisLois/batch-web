@@ -22,7 +22,7 @@ export default function Section() {
                 <div
                   key={`${title}-${index}`}
                   data-section-id={id}
-                  className={['section-main', isEven(index) ? 'section-reverse' : ''].join(' ')} >
+                  className={['section-main', isEven(index) ? 'section-reverse section-flex-end' : 'section-flex-start'].join(' ')} >
                     <div className='section-copy'>
                         <h1 className='section-title'>{title}</h1>
                         <p className='section-subtitle'>{body}</p>
@@ -36,8 +36,9 @@ export default function Section() {
                     <img className='section-img section-desktop'
                     src={image.desktop.img}
                     />
-                    <img className='section-img section-mobile'
-                    src={image.mobile.img}
+                    <img
+                      className={['section-img', 'section-mobile', index === 3 ? 'section-img-bottom' : ''].join(' ')}
+                      src={image.mobile.img}
                     />
                 </div>
             ))
