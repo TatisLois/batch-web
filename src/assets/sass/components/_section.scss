@@ -54,7 +54,20 @@
     }
 
 
+    &-desktop {
+      display: none;
+    }
+
+
     @media only screen and (min-width: $breakpoint-large) {
+
+      &-desktop {
+        display: block;
+      }
+
+      &-mobile {
+        display: none
+      }
 
       &-title {
         font-size: 38px;

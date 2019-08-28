@@ -33,7 +33,12 @@ export default function Section() {
                           &#8594;
                         </button>
                     </div>
-                    <img className='section-img' src={image} />
+                    <img className='section-img section-desktop'
+                    src={image.desktop.img}
+                    />
+                    <img className='section-img section-mobile'
+                    src={image.mobile.img}
+                    />
                 </div>
             ))
         }
