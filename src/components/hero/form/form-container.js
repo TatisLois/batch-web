@@ -9,7 +9,6 @@ const encode = (data) => {
 export class EmailForm extends Component {
   constructor() {
     super();
-    this.state = { message: '' };
     this.onSubmit = this.onSubmit.bind(this);
   }
 
@@ -25,39 +24,25 @@ export class EmailForm extends Component {
     }).catch(error => alert(error));
 
     e.preventDefault();
-
-
-
-    this.setState({ message: 'Thank you!' });
-    setTimeout(() => {
-      this.setState({ message: '' });
-    }, 3000);
   }
 
   render() {
-    const { message } = this.state;
     const { style } = this.props;
     return (
-      <form
-        style={style}
-        className='form'
-        id="signup-form"
-        onSubmit={this.onSubmit} // edit for form works
-        method="post"
-        name="batch-web-emails"
-        data-netlify="true">
-        <input type="hidden" name="form-name" value="batch-web-emails" />
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Email Address"
-        />
-        <button type="submit">Sign Up</button>
-        <span className={`${message ? 'visible success' : ''} message`}>
-          {message}
-        </span>
-      </form>
+      <div id="mc_embed_signup">
+        <form  style={style} action={`https://gmail.us4.list-manage.com/subscribe/post?u=41e9e06aa2500ddfa010d8d0e&amp;id=7b5f4015e8`} method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="form" target="_blank" noValidate>
+          <div id="mc_embed_signup_scroll">
+              <div className="mc-field-group">
+                <input type="email" placeholder='Email' name="EMAIL" className="required email" id="mce-EMAIL" />
+              </div>
+              <div id="mce-responses" className="clear">
+                <div className="response" id="mce-error-response" style={{display:"none"}} />
+                <div className="response" id="mce-success-response" style={{display:"none"}} />
+              </div>
+          </div>
+          <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button">Sign Up</button>
+        </form>
+      </div>
     );
   }
 }
