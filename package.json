@@ -2,7 +2,7 @@
   "name": "batch-web",
   "version": "0.0.1",
   "author": {
-    "name": "Batch Team"
+    "name": "Batch Team!"
   },
   "scripts": {
     "dev": "gatsby develop",
