@@ -30,7 +30,7 @@ export class EmailForm extends Component {
     const { style } = this.props;
     return (
       <div id="mc_embed_signup">
-        <form  style={style} action={`https://gmail.us4.list-manage.com/subscribe/post?u=41e9e06aa2500ddfa010d8d0e&amp;id=7b5f4015e8`} method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="form" target="_blank" noValidate>
+        <form  style={style} action={`https://gmail.us4.list-manage.com/subscribe/post?u=41e9e06aa2500ddfa010d8d0e&amp;id=7b5f4015e8`} method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="form" noValidate>
           <div id="mc_embed_signup_scroll">
               <div className="mc-field-group">
                 <input type="email" placeholder='Email' name="EMAIL" className="required email" id="mce-EMAIL" />
